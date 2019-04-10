@@ -36,17 +36,19 @@ h3 {
 .sect1 img {
     float: left;
     margin: auto;
+    max-width: 100px;
+    width: 17vw;
 }
 
 .sect2 {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10px;
 }
 
 .sect3 {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
 }
 
@@ -64,3 +66,23 @@ a:link, a:visited, a:hover {
     text-decoration: none;
     color: #FF5003;
 }
+
+
+@media screen and (max-width: 800px) {
+    body {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    h1 {
+       font-size: 17vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sect2 {
+        grid-template-columns: 1fr;
+    }
+    .sect3 {
+        grid-template-columns: 1fr;
+    }
+  }
