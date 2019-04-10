@@ -1,0 +1,53 @@
+body {
+    text-align: left;
+    background-color: #111111;
+    color: #cc6055;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    border-top: 1px solid #111111;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+    width: 40%;
+    min-width: 500px;
+    margin-top: 1%;
+    padding-bottom: 10px;
+    background-color: #252525;
+}
+
+#colorDie {
+    color: #2ecc71;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;\
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.btn-vis {
+    background-color: #cc6055;
+    border-radius: 0;
+    border: 0px;
+    color: #eff3f3;
+}
+
+.btn-center {
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 0;
+    color: #cc6055;
+    font-size: 1.25em;
+    height: 5%;
+}
