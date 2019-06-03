@@ -1,88 +1,101 @@
 body {
-    background-color: #0d1111;
-    color: #eee;
-    max-width: 800px;
-    margin: auto;
-    font-family: 'Fira Sans', sans-serif;
+  background-color: #0d1111;
+  color: #eee;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 h1 {
-    color: #eee;
-    font-size: 144px;
+  color: #eee;
+  font-size: 144px;
 }
 
 h2 {
-    color: #ff5003;
+  color: #ff5003;
 }
 
 h3 {
-    border-bottom: 1px solid #ff5003;
+  border-bottom: 1px solid #ff5003;
+}
+
+.stack-icons {
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  width: 5em;
+  fill: #ff5003;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .nameplate {
-    background-color: #ff5003;
-    margin-top: 2rem;
-    padding: 1rem;
+  background-color: #ff5003;
+  margin-top: 2rem;
+  padding: 1rem;
 }
 
 .name {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: right;
-    font-weight: 900;
-    font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+  font-weight: 900;
+  font-style: italic;
 }
 
-.sect1 img {
-    float: left;
-    margin: auto;
-    max-width: 100px;
-    width: 17vw;
+.section-personal img {
+  float: left;
+  margin: auto;
+  max-width: 100px;
+  width: 17vw;
 }
 
-.sect2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
+.section-personal p {
+  margin-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.sect3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
+.section-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
 }
 
 .project-card img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 0rem;
+  list-style-type: none;
+  padding-left: 0rem;
 }
 
-a:link, a:visited, a:hover {
-    font-style: none;
-    text-decoration: none;
-    color: #FF5003;
+a:link,
+a:visited,
+a:hover {
+  font-style: none;
+  text-decoration: none;
+  color: #ff5003;
 }
-
 
 @media screen and (max-width: 800px) {
-    body {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    h1 {
-       font-size: 17vw;
-    }
+  body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  h1 {
+    font-size: 17vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .sect2 {
-        grid-template-columns: 1fr;
-    }
-    .sect3 {
-        grid-template-columns: 1fr;
-    }
+  .sect2 {
+    grid-template-columns: 1fr;
   }
+  .section-projects {
+    grid-template-columns: 1fr;
+  }
+}
